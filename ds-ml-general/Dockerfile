@@ -1,6 +1,6 @@
-# orbyter-ml-dev:1.2 
+#  
 FROM manifoldai/orbyter-base-sys:1.0
-COPY . /build
+COPY ./* /build
 WORKDIR /build
 # Separely split pip to avoid pip install main issue
 RUN pip install --upgrade pip
