@@ -1,7 +1,7 @@
 #  
 FROM manifoldai/orbyter-base-sys:1.0
 COPY . /build
-COPY ./requirements.txt ./build
+COPY requirements.txt /build
 WORKDIR /build
 # Separely split pip to avoid pip install main issue
 RUN pip install --upgrade pip
